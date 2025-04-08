@@ -1,4 +1,6 @@
 @import url(./font.css);
+@import url(./carousel.css);
+
 :root {
   --color--green: #b9ff66;
   --color--black: #191a23;
