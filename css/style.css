@@ -19,6 +19,7 @@ body {
 img {
   height: auto;
   display: block;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -27,7 +28,10 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 800;
+  font-weight: 400;
+}
+p {
+  font-weight: 400;
 }
 button {
   border: 0;
@@ -86,4 +90,31 @@ ul li a {
 .btn:hover {
   background-color: var(--color--black);
   color: var(--color--gray);
+}
+/* ==============hero section============ */
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding-block: 70px;
+}
+.hero-right {
+  width: 90%;
+}
+.hero-section .hero-right h1 {
+  font-size: 4rem;
+}
+
+.hero-section .hero-right p {
+  font-size: 1.2rem;
+  line-height: 28px;
+}
+.hero_btn {
+  background-color: var(--color--black);
+  color: var(--color--gray);
+  font-size: 1rem;
+}
+.hero_btn:hover {
+  background-color: var(--color--gray);
+  color: var(--color--black);
 }
