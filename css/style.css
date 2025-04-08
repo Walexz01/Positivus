@@ -1,0 +1,89 @@
+@import url(./font.css);
+:root {
+  --color--green: #b9ff66;
+  --color--black: #191a23;
+  --color--gray: #f3f3f3;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Space Grotesk" Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+}
+button {
+  border: 0;
+}
+.section-container {
+  width: 90%;
+  margin: auto;
+}
+
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding-right: 40px;
+  line-height: 28px;
+  font-size: 1.1rem;
+  position: relative;
+}
+ul li a {
+  color: var(--color--black);
+}
+.btn {
+  border: 1px solid var(--color--black);
+  padding: 15px 20px;
+  border-radius: 14px;
+  transition: 0.3s ease-in;
+  transition-property: background-color, color;
+}
+.navlink li::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color--green);
+  transition: 0.3s ease-in-out.1s;
+}
+.navlink li:last-child:before,
+.navlink li:last-child:hover:before {
+  width: 0;
+}
+.navlink li:hover::before {
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: var(--color--black);
+  color: var(--color--gray);
+}
