@@ -137,6 +137,7 @@ ul li a {
 .section_header h2 {
   background-color: var(--color--green);
   font-size: 2.1rem;
+  text-wrap: nowrap;
   border-radius: 7px;
   padding: 5px 10px;
   font-weight: 400;
@@ -239,6 +240,40 @@ ul li a {
 .make_it_right {
   height: 394px;
   width: 494px;
+}
+/* ========== case========== */
+.case_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--color--black);
+  color: var(--color--gray);
+  padding-inline: 60px;
+  padding-block: 70px;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-radius: 45px;
+}
+.case_grid .grid_item {
+  padding-inline: 64px;
+  display: grid;
+  border-left: 1px solid var(--color--green);
+}
+.case_grid .grid_item:first-child {
+  padding-inline-start: 0;
+  border-left: 0px solid var(--color--green);
+}
+.case_grid .grid_item:last-child {
+  padding-inline-end: 0;
+}
+.case_grid .grid_item a {
+  color: var(--color--green);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.case_grid .grid_item a img {
+  width: 17px;
+  height: 10px;
 }
 
 /* ============= media query for width<= 1300px =========== */
