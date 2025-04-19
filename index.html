@@ -15,11 +15,9 @@
   <body>
     <header class="section-container">
       <nav>
-        <a href="/"
-          ><img
-            src="/assets/Logo.png"
-            alt="Positivus Logo"
-        /></a>
+        <a href="/">
+          <img src="assets/Logo.png" alt="Positivus Logo" />
+        </a>
         <ul class="navlink">
           <li>
             <a href="/about-us">About us</a>
@@ -380,7 +378,56 @@
         <div class="btn_container">
           <button class="btn black_btn">See all team</button>
         </div>
-      </div>
+      </section>
+      <!-- ================== contact section========== -->
+      <section class="section-container contact-container">
+        <div class="section_header contact_header">
+          <h2>Contact Us</h2>
+          <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+        </div>
+        <div class="form_container">
+          <form action="">
+            <div class="radio_input">
+              <input
+                type="radio"
+                name="message_type"
+                id="Say_hi"
+                value="Say Hi"
+              />
+              <label for="Say Hi">Say Hi</label>
+              <input
+                type="radio"
+                name="message_type"
+                id="Get_a_quote"
+                value="Get a Quote"
+              />
+              <label for="Get a Quote">Get a Quote</label>
+            </div>
+            <div class="text_input">
+              <div class="input">
+                <label for="name">Name</label><br />
+                <input placeholder="Name" type="text" name="name" id="name" />
+              </div>
+              <div class="input">
+                <label for="email">Email</label><br />
+                <input
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="input">
+                <label for="message">Email</label><br />
+                <textarea name="message" id="message"></textarea>
+              </div>
+            </div>
+            <button class="btn black_btn">Send Message</button>
+          </form>
+          <div class="form_right">
+            <img src="assets/contact-right.png" alt="" />
+          </div>
+        </div>
       </section>
     </main>
   </body>

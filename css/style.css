@@ -321,6 +321,62 @@ ul li a {
 .btn_container {
   text-align: right;
 }
+/* ================= team============== */
+.form_container {
+  background-color: var(--color--gray);
+  margin-top: 40px;
+  padding-inline: 100px;
+  padding-block: 60px;
+  border-radius: 45px;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+form {
+  width: 40%;
+}
+.radio_input label {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.radio_input input:checked {
+  accent-color: var(--color--green);
+}
+.text_input {
+  padding-top: 20px;
+}
+.text_input .input {
+  padding-top: 30px;
+}
+.text_input input,
+.input textarea {
+  width: 100%;
+  border-radius: 14px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid var(--color--black);
+  margin-top: 10px;
+}
+.input textarea {
+  height: 150px;
+  resize: none;
+}
+form .btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form_container img {
+  width: 691px;
+  height: 648px;
+  position: absolute;
+  top: 0;
+  right: -25%;
+}
 
 /* ============= media query for width<= 1300px =========== */
 @media (width<= 1300px) {
